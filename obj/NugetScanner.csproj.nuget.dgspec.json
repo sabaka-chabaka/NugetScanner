@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "D:\\RiderProjects\\NugetScanner\\NugetScanner.csproj",
-        "projectName": "NugetScanner",
+        "projectName": "sabaka-chabaka.NugetSpy",
         "projectPath": "D:\\RiderProjects\\NugetScanner\\NugetScanner.csproj",
         "packagesPath": "C:\\Users\\sokor\\.nuget\\packages\\",
         "outputPath": "D:\\RiderProjects\\NugetScanner\\obj\\",
@@ -45,12 +45,6 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.11, )",
-              "autoReferenced": true
-            },
             "Spectre.Console": {
               "target": "Package",
               "version": "[0.54.0, )"

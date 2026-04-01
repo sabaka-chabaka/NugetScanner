@@ -1,2 +1,6 @@
-D:\RiderProjects\NugetScanner\bin\Release\net9.0\win-x64\publish\NugetScanner.pdb
 D:\RiderProjects\NugetScanner\bin\Release\net9.0\win-x64\publish\NugetScanner.exe
+D:\RiderProjects\NugetScanner\bin\Release\net9.0\win-x64\publish\NugetScanner.dll
+D:\RiderProjects\NugetScanner\bin\Release\net9.0\win-x64\publish\NugetScanner.deps.json
+D:\RiderProjects\NugetScanner\bin\Release\net9.0\win-x64\publish\NugetScanner.runtimeconfig.json
+D:\RiderProjects\NugetScanner\bin\Release\net9.0\win-x64\publish\NugetScanner.pdb
+D:\RiderProjects\NugetScanner\bin\Release\net9.0\win-x64\publish\Spectre.Console.dll
