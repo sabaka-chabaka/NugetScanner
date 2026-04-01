@@ -1,0 +1,2 @@
+D:\RiderProjects\NugetScanner\bin\Release\net9.0\publish\NugetScanner.pdb
+D:\RiderProjects\NugetScanner\bin\Release\net9.0\publish\NugetScanner.exe

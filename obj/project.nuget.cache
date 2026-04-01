@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WVO+3+Unqrg=",
+  "success": true,
+  "projectFilePath": "D:\\RiderProjects\\NugetScanner\\NugetScanner.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sokor\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.11\\microsoft.net.illink.tasks.9.0.11.nupkg.sha512",
+    "C:\\Users\\sokor\\.nuget\\packages\\spectre.console\\0.54.0\\spectre.console.0.54.0.nupkg.sha512"
+  ],
+  "logs": []
+}

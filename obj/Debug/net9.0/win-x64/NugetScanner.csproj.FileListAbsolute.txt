@@ -1,0 +1,17 @@
+D:\RiderProjects\NugetScanner\bin\Debug\net9.0\win-x64\NugetScanner.exe
+D:\RiderProjects\NugetScanner\bin\Debug\net9.0\win-x64\NugetScanner.deps.json
+D:\RiderProjects\NugetScanner\bin\Debug\net9.0\win-x64\NugetScanner.runtimeconfig.json
+D:\RiderProjects\NugetScanner\bin\Debug\net9.0\win-x64\NugetScanner.dll
+D:\RiderProjects\NugetScanner\bin\Debug\net9.0\win-x64\NugetScanner.pdb
+D:\RiderProjects\NugetScanner\bin\Debug\net9.0\win-x64\Spectre.Console.dll
+D:\RiderProjects\NugetScanner\obj\Debug\net9.0\win-x64\NugetScanner.csproj.AssemblyReference.cache
+D:\RiderProjects\NugetScanner\obj\Debug\net9.0\win-x64\NugetScanner.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProjects\NugetScanner\obj\Debug\net9.0\win-x64\NugetScanner.AssemblyInfoInputs.cache
+D:\RiderProjects\NugetScanner\obj\Debug\net9.0\win-x64\NugetScanner.AssemblyInfo.cs
+D:\RiderProjects\NugetScanner\obj\Debug\net9.0\win-x64\NugetScanner.csproj.CoreCompileInputs.cache
+D:\RiderProjects\NugetScanner\obj\Debug\net9.0\win-x64\NugetSca.29914412.Up2Date
+D:\RiderProjects\NugetScanner\obj\Debug\net9.0\win-x64\NugetScanner.dll
+D:\RiderProjects\NugetScanner\obj\Debug\net9.0\win-x64\refint\NugetScanner.dll
+D:\RiderProjects\NugetScanner\obj\Debug\net9.0\win-x64\NugetScanner.pdb
+D:\RiderProjects\NugetScanner\obj\Debug\net9.0\win-x64\NugetScanner.genruntimeconfig.cache
+D:\RiderProjects\NugetScanner\obj\Debug\net9.0\win-x64\ref\NugetScanner.dll
