@@ -10,7 +10,7 @@
         <PackAsTool>true</PackAsTool>
         <ToolCommandName>nuget-spy</ToolCommandName> 
         <PackageId>sabaka-chabaka.NugetSpy</PackageId> 
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <Authors>sabaka-chabaka</Authors>
         <Description>CLI tool to audit .NET project dependencies for updates and vulnerabilities.</Description>
         <PackageTags>dotnet;nuget;cli;tool;security</PackageTags>

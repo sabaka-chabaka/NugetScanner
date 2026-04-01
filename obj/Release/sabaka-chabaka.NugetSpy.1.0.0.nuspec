@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>sabaka-chabaka.NugetSpy</id>
+    <version>1.0.0</version>
+    <authors>sabaka-chabaka</authors>
+    <description>CLI tool to audit .NET project dependencies for updates and vulnerabilities.</description>
+    <tags>dotnet nuget cli tool security</tags>
+    <packageTypes>
+      <packageType name="DotnetTool" />
+    </packageTypes>
+    <repository type="git" url="https://github.com/sabaka-chabaka/NugetScanner" commit="ddbe28f7414e4d99044b905eac74e5c45071b4f5" />
+  </metadata>
+  <files>
+    <file src="D:\RiderProjects\NugetScanner\obj\Release\net9.0\win-x64\DotnetToolSettings.xml" target="tools\net9.0\any\DotnetToolSettings.xml" />
+    <file src="D:\RiderProjects\NugetScanner\bin\Release\net9.0\win-x64\publish\NugetScanner.dll" target="tools\net9.0\any\NugetScanner.dll" />
+    <file src="D:\RiderProjects\NugetScanner\bin\Release\net9.0\win-x64\publish\NugetScanner.deps.json" target="tools\net9.0\any\NugetScanner.deps.json" />
+    <file src="D:\RiderProjects\NugetScanner\bin\Release\net9.0\win-x64\publish\NugetScanner.runtimeconfig.json" target="tools\net9.0\any\NugetScanner.runtimeconfig.json" />
+    <file src="D:\RiderProjects\NugetScanner\bin\Release\net9.0\win-x64\publish\NugetScanner.pdb" target="tools\net9.0\any\NugetScanner.pdb" />
+    <file src="D:\RiderProjects\NugetScanner\bin\Release\net9.0\win-x64\publish\Spectre.Console.dll" target="tools\net9.0\any\Spectre.Console.dll" />
+  </files>
+</package>
