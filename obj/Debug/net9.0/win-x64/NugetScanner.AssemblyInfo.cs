@@ -13,11 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sabaka-chabaka")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("CLI tool to audit .NET project dependencies for updates and vulnerabilities.")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ddbe28f7414e4d99044b905eac74e5c45071b4f5")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1+969e84fe359769f29ce6361b40260d2ccf057375")]
 [assembly: System.Reflection.AssemblyProductAttribute("NugetScanner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NugetScanner")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.1.0")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/sabaka-chabaka/NugetScanner")]
 
 // Создано классом WriteCodeFragment MSBuild.

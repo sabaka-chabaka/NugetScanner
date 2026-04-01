@@ -64,7 +64,7 @@
     "C:\\Users\\sokor\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "restore": {
       "projectUniqueName": "D:\\RiderProjects\\NugetScanner\\NugetScanner.csproj",
       "projectName": "sabaka-chabaka.NugetSpy",

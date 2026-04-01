@@ -15,10 +15,16 @@
         <Description>CLI tool to audit .NET project dependencies for updates and vulnerabilities.</Description>
         <PackageTags>dotnet;nuget;cli;tool;security</PackageTags>
         <RepositoryUrl>https://github.com/sabaka-chabaka/NugetScanner</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Spectre.Console" Version="0.54.0" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
 </Project>
