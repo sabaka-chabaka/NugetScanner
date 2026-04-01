@@ -16,6 +16,7 @@ Simply navigate to your project folder and run:
 nuget-spy
 ```
 ## 📸 Screenshots
-(Add your screenshot here!)
+<img src="https://i.imgur.com/nLWvI73l.png" alt="screenshot">
+
 ## 🌟 Support
 If you find this tool useful, please give it a ⭐ to help others discover it!
