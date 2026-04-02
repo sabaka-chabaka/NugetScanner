@@ -5,7 +5,7 @@
   },
   "projects": {
     "D:\\RiderProjects\\NugetScanner\\NugetScanner.csproj": {
-      "version": "1.0.2",
+      "version": "1.0.4",
       "restore": {
         "projectUniqueName": "D:\\RiderProjects\\NugetScanner\\NugetScanner.csproj",
         "projectName": "sabaka-chabaka.NugetSpy",
@@ -45,6 +45,12 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.11, )",
+              "autoReferenced": true
+            },
             "Spectre.Console": {
               "target": "Package",
               "version": "[0.54.0, )"

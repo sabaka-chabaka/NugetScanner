@@ -12,7 +12,7 @@
     <packageTypes>
       <packageType name="DotnetTool" />
     </packageTypes>
-    <repository type="git" url="https://github.com/sabaka-chabaka/NugetScanner" commit="dac9d68644577e06c0acde34d3ec0dc69f6b9b5d" />
+    <repository type="git" url="https://github.com/sabaka-chabaka/NugetScanner" commit="d885e32cc5a8f05c40cbd881d637f08a481d86e9" />
   </metadata>
   <files>
     <file src="D:\RiderProjects\NugetScanner\obj\Release\net9.0\win-x64\DotnetToolSettings.xml" target="tools\net9.0\any\DotnetToolSettings.xml" />

@@ -29,6 +29,7 @@ foreach (var path in projectFiles) {
     table.AddColumn("Package");
     table.AddColumn("Current", c => c.Centered());
     table.AddColumn("Latest", c => c.Centered());
+    table.AddColumn("Vulnerabilities", c => c.Centered()); 
     table.AddColumn("Status");
 
     var doc = XDocument.Load(path);
@@ -41,16 +42,30 @@ foreach (var path in projectFiles) {
 
     if (!packages.Any()) continue;
 
-    await AnsiConsole.Status().StartAsync($"Scanning...", async ctx => {
+    await AnsiConsole.Status().StartAsync("Scanning...", async ctx => {
         foreach (var pkg in packages) {
             ctx.Status($"Checking [bold cyan]{pkg.Name}[/]...");
+            
             var latestVersion = await GetLatestVersion(client, pkg.Name!);
+            var vulnerabilities = await GetVulnerabilities(client, pkg.Name!, pkg.Version!);
             
             bool isOutdated = latestVersion != "N/A" && latestVersion != "Err" && latestVersion != pkg.Version;
+            bool hasVulnerabilities = vulnerabilities > 0;
+            
+            string vulnStatus = hasVulnerabilities 
+                ? $"[bold red]!! {vulnerabilities} Found !![/]" 
+                : "[green]Clean[/]";
+                
             string status = isOutdated ? "[yellow]Update[/]" : "[green]OK[/]";
+            if (hasVulnerabilities) status = "[bold white on red] DANGER [/]";
             if (latestVersion == "Err") status = "[red]API Err[/]";
 
-            table.AddRow(pkg.Name!, pkg.Version!, isOutdated ? $"[bold red]{latestVersion}[/]" : latestVersion, status);
+            table.AddRow(
+                pkg.Name!, 
+                pkg.Version!, 
+                isOutdated ? $"[bold red]{latestVersion}[/]" : latestVersion,
+                vulnStatus,
+                status);
         }
     });
     AnsiConsole.Write(table);
@@ -60,26 +75,23 @@ AnsiConsole.MarkupLine("[bold green]Scan finished![/]");
 
 async Task<string> GetLatestVersion(HttpClient httpClient, string packageName)
 {
-    try
-    {
+    try {
         var url = $"https://azuresearch-usnc.nuget.org/query?q={packageName}&prerelease=false&take=1";
 
         var response = await httpClient.GetFromJsonAsync<JsonElement>(url);
+        return response.GetProperty("data")[0].GetProperty("version").GetString() ?? "N/A";
+    } catch { return "Err"; }
+}
 
-        if (response.TryGetProperty("data", out var dataArray) && dataArray.GetArrayLength() > 0)
-        {
-            var firstItem = dataArray[0];
-
-            if (firstItem.TryGetProperty("version", out var versionProp))
-            {
-                return versionProp.GetString() ?? "N/A";
-            }
+async Task<int> GetVulnerabilities(HttpClient httpClient, string packageName, string version)
+{
+    try {
+        var url = $"https://nuget.org{packageName.ToLower()}/{version.ToLower()}.json";
+        var response = await httpClient.GetFromJsonAsync<JsonElement>(url);
+        
+        if (response.TryGetProperty("vulnerabilities", out var vulnArray)) {
+            return vulnArray.GetArrayLength();
         }
-
-        return "N/A";
-    }
-    catch
-    {
-        return "Err";
-    }
+        return 0;
+    } catch { return 0; }
 }
